@@ -1,0 +1,63 @@
+@import "@fontsource-variable/dm-sans/wght.css";
+@import "@fontsource/dm-mono/400.css";
+@import "@fontsource/dm-mono/500.css";
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "DM Sans Variable", "DM Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "DM Mono", ui-monospace, monospace;
+
+  --color-bg: #121410;
+  --color-stage: #0c0d0b;
+  --color-surface: #1b1d18;
+  --color-surface-2: #242720;
+  --color-line: #34362d;
+  --color-fg: #f3f1ea;
+  --color-muted: #a3a194;
+  --color-faint: #8a897e;
+  --color-rec: #e23b2b;
+  --color-on-rec: #fff8f5;
+}
+
+@layer base {
+  button:not(:disabled),
+  [role="button"]:not(:disabled),
+  summary {
+    cursor: pointer;
+  }
+
+  html,
+  body {
+    background: var(--color-bg);
+    color: var(--color-fg);
+  }
+
+  body {
+    font-family: var(--font-sans);
+    text-rendering: optimizeLegibility;
+  }
+}
+
+@keyframes nock-blink {
+  50% {
+    opacity: 0.35;
+  }
+}
+
+.rec-dot {
+  display: inline-block;
+  width: 0.55rem;
+  height: 0.55rem;
+  border-radius: 999px;
+  background: var(--color-rec);
+}
+
+.rec-dot.is-live {
+  animation: nock-blink 1.15s steps(2, end) infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .rec-dot.is-live {
+    animation: none;
+  }
+}

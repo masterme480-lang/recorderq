@@ -1,0 +1,38 @@
+{
+  "url": "http://127.0.0.1:8081/",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 800,
+      "status": 200,
+      "title": "Nock",
+      "hasCanvas": false,
+      "bodyTextLen": 1571,
+      "bodyTextHash": "cfc92ae95da0b339077af2a9e6cfc8fb54087290f0ea1950ba3dffde3b044e32",
+      "bodyTextPrefix": "NOCK Screen recorder This PC reports Vulkan 1.3.0 (SwiftShader D",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-built.png"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "Nock",
+      "hasCanvas": false,
+      "bodyTextLen": 1571,
+      "bodyTextHash": "cfc92ae95da0b339077af2a9e6cfc8fb54087290f0ea1950ba3dffde3b044e32",
+      "bodyTextPrefix": "NOCK Screen recorder This PC reports Vulkan 1.3.0 (SwiftShader D",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-built-mobile.png"
+    }
+  },
+  "brandWarnings": [],
+  "authWarnings": [],
+  "verdictFile": "/workspace/screenshots/app-builder-built.json",
+  "divergesFromBaseline": false,
+  "baselineReasons": []
+}
